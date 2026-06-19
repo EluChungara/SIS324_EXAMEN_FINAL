@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElChuCho Petrol - SIS324</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="nombreEmpresa">ElChuCho Petrol</h1>
+    <p>Sistema de inventario y venta controlada de carburantes</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Tanques de depósito</h2>
+      <div id="tanques"></div>
+    </section>
+
+    <section class="card">
+      <h2>Registrar cliente</h2>
+      <form id="formCliente">
+        <input id="documento" placeholder="CI / NIT" required>
+        <input id="nombreCliente" placeholder="Nombre completo o razón social" required>
+        <input id="placa" placeholder="Placa del vehículo" required>
+        <select id="tipoCliente" aria-label="Tipo de cliente" required>
+          <option value="">Seleccione tipo de cliente</option>
+          <option value="PARTICULAR">Particular</option>
+          <option value="TRANSPORTE_PUBLICO">Transporte público</option>
+          <option value="EMPRESA">Empresa</option>
+        </select>
+        <button type="submit">Guardar cliente</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Ingreso de carburante</h2>
+      <form id="formIngreso">
+        <select id="tanqueIngreso" aria-label="Tanque de ingreso" required></select>
+        <input id="litrosIngreso" type="number" step="0.01" placeholder="Litros ingresados" required>
+        <input id="facturaIngreso" placeholder="Factura / Remisión" required>
+        <button type="submit">Registrar ingreso</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Nueva venta controlada</h2>
+
+      <div class="busqueda">
+        <input id="buscarCliente" placeholder="Ingrese placa o documento">
+        <button id="btnBuscar">Buscar cliente</button>
+      </div>
+
+      <div id="infoCliente" class="info"></div>
+
+      <form id="formVenta">
+        <select id="clienteVenta" aria-label="Cliente" required></select>
+        <select id="tanqueVenta" aria-label="Tanque de venta" required></select>
+        <input id="litrosVenta" type="number" step="0.01" placeholder="Cantidad solicitada en litros" required>
+        <button type="submit">Procesar venta</button>
+      </form>
+
+      <div id="resultadoVenta" class="resultado"></div>
+    </section>
+
+    <section class="card">
+      <h2>Historial de ventas</h2>
+      <div id="ventas"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+  color: #1f2937;
+}
+
+header {
+  background: #0f172a;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  width: 92%;
+  max-width: 1100px;
+  margin: 25px auto;
+}
+
+.card {
+  background: white;
+  padding: 22px;
+  margin-bottom: 22px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+input, select {
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button {
+  padding: 11px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.busqueda {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.busqueda input {
+  flex: 1;
+}
+
+.tanque, .venta {
+  border: 1px solid #d1d5db;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: #f9fafb;
+}
+
+.alerta {
+  color: #b91c1c;
+  font-weight: bold;
+}
+
+.ok {
+  color: #15803d;
+  font-weight: bold;
+}
+
+.info, .resultado {
+  margin: 15px 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f8fafc;
+}

@@ -1,6 +1,23 @@
 {
+  "name": "carburantes-sis324",
+  "version": "1.0.0",
+  "description": "Sistema web para inventario y venta controlada de carburantes",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
+  },
+  "keywords": [
+    "sis324",
+    "sqlite",
+    "express",
+    "carburantes",
+    "inventario"
+  ],
+  "author": "Elizabeth Chungara Choque",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
   }
 }
